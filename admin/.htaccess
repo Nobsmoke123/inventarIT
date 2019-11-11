@@ -1,0 +1,8 @@
+Options +SymLinksIfOwnerMatch 
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . ./dashboard.php [L]
+
+Options -Indexes
+DirectoryIndex login.php
