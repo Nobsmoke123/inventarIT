@@ -9,7 +9,7 @@ class DatabaseConnection
     private $dbname = null;
     private $dns = null;
 
-    public function __construct($username = "root", $password = "qwertyuiop!@#$%^&*()", $dbname = "invertar")
+    public function __construct($username = "use_your_username", $password = "use_your_password", $dbname = "your_db_name")
     {
         $this->dbname = $dbname;
         $this->password = $password;
