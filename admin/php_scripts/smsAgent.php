@@ -9,8 +9,8 @@ class SmsAgent
 
     public function __construct(PDO $connection, Queries $queries)
     {
-        $this->user         =   urlencode("xxxxxxxxxxxxxxx");
-        $this->password     =   urlencode("+++++++++++++++");
+        $this->user         =   urlencode("your_username");
+        $this->password     =   urlencode("your_password");
         $this->queries      =   $queries;
         $this->pdo          =   $connection;
     }
@@ -42,7 +42,7 @@ class SmsAgent
 
     public function getBalance(){
         $curl_instance = curl_init();
-        $url = "http://portal.bulksmsnigeria.net/api/?username=".urlencode("xxxxxxxxxxxxxxx")."&password=".urlencode("xxxxxxxxxxxxxxxxxx")."&action=balance";
+        $url = "http://portal.bulksmsnigeria.net/api/?username=".urlencode("your_username")."&password=".urlencode("your_password")."&action=balance";
         // $url = "http://portal.bulksmsnigeria.net/api/?username=".$this->user."&password=".$this->password."&message=".urlencode($message)."&sender=".$sender."&mobiles=".$receiver;
 
         curl_setopt($curl_instance,CURLOPT_URL,$url);
