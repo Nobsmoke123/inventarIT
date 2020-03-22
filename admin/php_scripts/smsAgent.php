@@ -9,8 +9,8 @@ class SmsAgent
 
     public function __construct(PDO $connection, Queries $queries)
     {
-        $this->user         =   urlencode("donaldchimezieakobundu@yahoo.com");
-        $this->password     =   urlencode("blackhat007!!!");
+        $this->user         =   urlencode("xxxxxxxxxxxxxxx");
+        $this->password     =   urlencode("+++++++++++++++");
         $this->queries      =   $queries;
         $this->pdo          =   $connection;
     }
