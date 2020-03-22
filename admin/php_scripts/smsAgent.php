@@ -42,7 +42,7 @@ class SmsAgent
 
     public function getBalance(){
         $curl_instance = curl_init();
-        $url = "http://portal.bulksmsnigeria.net/api/?username=".urlencode("donaldchimezieakobundu@yahoo.com")."&password=".urlencode("blackhat007!!!")."&action=balance";
+        $url = "http://portal.bulksmsnigeria.net/api/?username=".urlencode("xxxxxxxxxxxxxxx")."&password=".urlencode("xxxxxxxxxxxxxxxxxx")."&action=balance";
         // $url = "http://portal.bulksmsnigeria.net/api/?username=".$this->user."&password=".$this->password."&message=".urlencode($message)."&sender=".$sender."&mobiles=".$receiver;
 
         curl_setopt($curl_instance,CURLOPT_URL,$url);
